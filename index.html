@@ -1,0 +1,1062 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Estúdio Larissa Pinheiro - Fotografia feminina, gestante e revelação de fotos em Piabetá, Magé. Registre momentos especiais com sensibilidade e personalidade.">
+
+    <meta name="theme-color" content="#f4eee5">
+
+    <title>Estúdio Larissa Pinheiro | Fotografia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bege: #f4eee5;
+            --bege-claro: #fbf8f3;
+            --marrom: #604538;
+            --marrom-escuro: #38251e;
+            --vermelho: #9d443b;
+            --vermelho-claro: #b96658;
+            --texto: #57483f;
+            --branco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bege-claro);
+            color: var(--texto);
+            font-family: 'DM Sans', sans-serif;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* HEADER */
+
+        header {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            padding: 25px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(251, 248, 243, 0.92);
+            backdrop-filter: blur(12px);
+        }
+
+        .logo {
+            font-family: 'Playfair Display', serif;
+            color: var(--marrom-escuro);
+            font-size: 23px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            display: block;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 9px;
+            letter-spacing: 4px;
+            color: var(--vermelho);
+            text-transform: uppercase;
+            margin-top: 3px;
+        }
+
+        nav {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+        }
+
+        nav a {
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: .3s;
+        }
+
+        nav a:hover {
+            color: var(--vermelho);
+        }
+
+        .nav-button {
+            padding: 13px 22px;
+            background: var(--vermelho);
+            color: white;
+            border-radius: 2px;
+        }
+
+        .nav-button:hover {
+            background: var(--marrom);
+            color: white;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 28px;
+            color: var(--marrom);
+            cursor: pointer;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 750px;
+            padding: 150px 8% 90px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 65px;
+            background: var(--bege);
+        }
+
+        .hero-content {
+            max-width: 550px;
+        }
+
+        .eyebrow {
+            color: var(--vermelho);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--marrom-escuro);
+            font-size: clamp(45px, 5.5vw, 76px);
+            font-weight: 400;
+            line-height: 1.12;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 em {
+            color: var(--vermelho);
+            font-weight: 400;
+        }
+
+        .hero-description {
+            font-size: 14px;
+            line-height: 2;
+            max-width: 420px;
+            color: #78675b;
+            margin-bottom: 35px;
+        }
+
+        .primary-button {
+            display: inline-block;
+            background: var(--vermelho);
+            color: white;
+            padding: 17px 30px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: .3s;
+        }
+
+        .primary-button:hover {
+            background: var(--marrom-escuro);
+            transform: translateY(-3px);
+        }
+
+        .hero-image {
+            height: 510px;
+            position: relative;
+        }
+
+        .hero-image img {
+            height: 100%;
+            object-position: center;
+        }
+
+        .hero-image::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 1px solid var(--vermelho);
+            top: 18px;
+            left: 18px;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        .hero-image img {
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-caption {
+            position: absolute;
+            bottom: -25px;
+            left: -35px;
+            background: var(--marrom);
+            color: white;
+            padding: 20px 28px;
+            z-index: 2;
+            font-family: 'Playfair Display', serif;
+            font-size: 17px;
+            font-style: italic;
+        }
+
+        /* INTRO */
+
+        .intro {
+            padding: 110px 10%;
+            text-align: center;
+        }
+
+        .intro h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 400;
+            color: var(--marrom-escuro);
+            max-width: 760px;
+            margin: 0 auto 25px;
+            line-height: 1.35;
+        }
+
+        .intro p {
+            max-width: 600px;
+            margin: auto;
+            font-size: 14px;
+            line-height: 2;
+            color: #827064;
+        }
+
+        .decorative-line {
+            width: 55px;
+            height: 2px;
+            background: var(--vermelho);
+            margin: 30px auto;
+        }
+
+        /* SERVICES */
+
+        .services {
+            background: var(--bege);
+            padding: 100px 8%;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-heading h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 43px;
+            font-weight: 400;
+            color: var(--marrom-escuro);
+            margin-bottom: 12px;
+        }
+
+        .section-heading p {
+            font-size: 13px;
+            color: #89776b;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: var(--bege-claro);
+            text-align: center;
+            padding-bottom: 35px;
+            transition: .3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .service-card img {
+            height: 350px;
+            margin-bottom: 30px;
+        }
+
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+            font-weight: 500;
+            color: var(--marrom);
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            font-size: 12px;
+            color: #89776b;
+            padding: 0 25px;
+            line-height: 1.8;
+        }
+
+        /* GALLERY */
+
+        .gallery {
+            padding: 110px 8%;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            grid-template-rows: 260px 260px;
+            gap: 15px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .gallery-item:first-child {
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            height: 100%;
+            transition: .5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        /* REVELATION */
+
+        .revelation {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background: var(--marrom-escuro);
+            color: white;
+        }
+
+        .revelation-image {
+            min-height: 480px;
+        }
+
+        .revelation-image img {
+            height: 100%;
+        }
+
+        .revelation-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 70px 12%;
+        }
+
+        .revelation-content .eyebrow {
+            color: #d69b82;
+        }
+
+        .revelation-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 44px;
+            font-weight: 400;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .revelation-content p {
+            font-size: 13px;
+            line-height: 2;
+            color: #d5c7bd;
+            margin-bottom: 30px;
+        }
+
+        .revelation-content .primary-button {
+            align-self: flex-start;
+            background: var(--vermelho-claro);
+        }
+
+        /* ABOUT */
+
+        .about {
+            padding: 110px 10%;
+            text-align: center;
+            background: var(--bege);
+        }
+
+        .about h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            font-weight: 400;
+            color: var(--marrom-escuro);
+            margin-bottom: 25px;
+        }
+
+        .about p {
+            max-width: 650px;
+            margin: auto;
+            color: #78675b;
+            font-size: 14px;
+            line-height: 2;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            padding: 100px 8%;
+            text-align: center;
+            background: var(--bege-claro);
+        }
+
+        .contact h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            color: var(--marrom-escuro);
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .contact > p {
+            font-size: 14px;
+            color: #89776b;
+            margin-bottom: 35px;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin: 45px 0;
+            flex-wrap: wrap;
+        }
+
+        .contact-details div {
+            min-width: 180px;
+        }
+
+        .contact-details h3 {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--vermelho);
+            margin-bottom: 12px;
+        }
+
+        .contact-details p {
+            font-size: 14px;
+            color: var(--marrom);
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: var(--marrom-escuro);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer .logo {
+            color: white;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            color: #c5b4a8;
+            font-size: 11px;
+            line-height: 2;
+        }
+
+        .social-link {
+            display: inline-block;
+            color: #d69b82;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+
+        /* WHATSAPP FLOAT */
+
+        .whatsapp-float {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            width: 58px;
+            height: 58px;
+            background: #25d366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 27px;
+            z-index: 200;
+            box-shadow: 0 5px 20px rgba(0,0,0,.2);
+            transition: .3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+            header {
+                padding: 20px 6%;
+            }
+
+            nav {
+                gap: 18px;
+            }
+
+            .hero {
+                padding-left: 6%;
+                padding-right: 6%;
+                gap: 35px;
+            }
+
+            .hero-image {
+                height: 420px;
+            }
+
+            .services {
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 18px 6%;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding: 25px;
+                background: var(--bege-claro);
+                flex-direction: column;
+                gap: 25px;
+                box-shadow: 0 10px 20px rgba(0,0,0,.06);
+            }
+
+            nav.active {
+                display: flex;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 140px 7% 80px;
+                gap: 55px;
+            }
+
+            .hero h1 {
+                font-size: 49px;
+            }
+
+            .hero-image {
+                height: 390px;
+                margin-right: 15px;
+            }
+
+            .image-caption {
+                left: -10px;
+            }
+
+            .intro,
+            .about {
+                padding: 80px 8%;
+            }
+
+            .services {
+                padding: 80px 7%;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .service-card img {
+                height: 390px;
+            }
+
+            .gallery {
+                padding: 80px 7%;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 300px 200px 200px;
+            }
+
+            .gallery-item:first-child {
+                grid-column: span 2;
+                grid-row: auto;
+            }
+
+            .revelation {
+                grid-template-columns: 1fr;
+            }
+
+            .revelation-image {
+                min-height: 320px;
+                height: 320px;
+            }
+
+            .revelation-content {
+                padding: 65px 8%;
+            }
+
+            .revelation-content h2,
+            .contact h2 {
+                font-size: 38px;
+            }
+
+            .contact {
+                padding: 80px 7%;
+            }
+
+            .contact-details {
+                gap: 30px;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .hero h1 {
+                font-size: 41px;
+            }
+
+            .hero-image {
+                height: 320px;
+            }
+
+            .gallery-grid {
+                grid-template-rows: 240px 170px 170px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <a href="#inicio" class="logo">
+            Estúdio
+            <span>Larissa Pinheiro</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            ☰
+        </button>
+
+        <nav id="navigation">
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato" class="nav-button">Agendar ensaio</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-content">
+
+            <div class="eyebrow">
+                Estúdio de fotografia · Piabetá
+            </div>
+
+            <h1>
+                Sua história merece ser <em>eternizada.</em>
+            </h1>
+
+            <p class="hero-description">
+                Transforme seu olhar por você mesma. 
+                Registre sua beleza, sua essência e os momentos
+                que fazem parte da sua história através da fotografia.
+            </p>
+
+            <a href="https://wa.me/5521982819245?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20os%20ensaios%20fotogr%C3%A1ficos." 
+               class="primary-button" target="_blank">
+                Agende seu ensaio →
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=1000"
+                alt="Retrato feminino artístico"
+            >
+
+            <div class="image-caption">
+                Beleza em cada detalhe.
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- INTRO -->
+
+    <section class="intro">
+
+        <div class="eyebrow">Muito além de uma fotografia</div>
+
+        <h2>
+            Cada fase da vida guarda uma beleza única.
+        </h2>
+
+        <div class="decorative-line"></div>
+
+        <p>
+            A fotografia é uma forma de guardar sentimentos,
+            celebrar conquistas e enxergar a própria beleza.
+            Nosso objetivo é transformar momentos especiais
+            em lembranças que você poderá reviver para sempre.
+        </p>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section class="services" id="servicos">
+
+        <div class="section-heading">
+            <div class="eyebrow">O que fazemos</div>
+            <h2>Nossos serviços</h2>
+            <p>Experiências fotográficas feitas para você.</p>
+        </div>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+                <img
+                    src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=800"
+                    alt="Ensaio fotográfico feminino"
+                    loading="lazy"
+                >
+
+                <h3>Ensaio Feminino</h3>
+
+                <p>
+                    Celebre sua personalidade, autoestima e beleza
+                    em um ensaio pensado para valorizar quem você é.
+                </p>
+            </article>
+
+
+            <article class="service-card">
+                <img
+                    src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800"
+                    alt="Fotografia de maternidade"
+                    loading="lazy"
+                >
+
+                <h3>Ensaio Gestante</h3>
+
+                <p>
+                    Eternize a doce espera e os primeiros capítulos
+                    de uma história que está apenas começando.
+                </p>
+            </article>
+
+
+            <article class="service-card">
+                <img
+                    src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800"
+                    alt="Câmera fotográfica e fotografia impressa"
+                    loading="lazy"
+                >
+
+                <h3>Revelação de Fotos</h3>
+
+                <p>
+                    Transforme suas fotografias digitais em
+                    lembranças físicas para guardar e compartilhar.
+                </p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALLERY -->
+
+    <section class="gallery" id="galeria">
+
+        <div class="section-heading">
+            <div class="eyebrow">Nosso olhar</div>
+            <h2>Momentos eternizados</h2>
+            <p>Um pouco do universo da fotografia.</p>
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900"
+                    alt="Retrato feminino"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?w=700"
+                    alt="Ensaio feminino ao ar livre"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=700"
+                    alt="Fotografia de retrato"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=700"
+                    alt="Retrato artístico"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=700"
+                    alt="Ensaio fotográfico"
+                    loading="lazy"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REVELATION -->
+
+    <section class="revelation">
+
+        <div class="revelation-image">
+            <img
+                src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1000"
+                alt="Câmera fotográfica profissional"
+                loading="lazy"
+            >
+        </div>
+
+        <div class="revelation-content">
+
+            <div class="eyebrow">
+                Suas memórias merecem existir
+            </div>
+
+            <h2>
+                Suas melhores lembranças, fora da tela.
+            </h2>
+
+            <p>
+                Suas fotografias favoritas merecem um lugar
+                especial. Faça a revelação das suas imagens
+                e transforme arquivos digitais em recordações
+                que podem ser tocadas, presenteadas e guardadas.
+            </p>
+
+            <a
+                href="https://wa.me/5521982819245?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20revela%C3%A7%C3%A3o%20de%20fotos."
+                target="_blank"
+                class="primary-button"
+            >
+                Solicitar revelação →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="sobre">
+
+        <div class="eyebrow">Conheça nosso trabalho</div>
+
+        <h2>Estúdio Larissa Pinheiro</h2>
+
+        <div class="decorative-line"></div>
+
+        <p>
+            Acreditamos que toda mulher merece se reconhecer
+            em fotografias que transmitam sua essência.
+            Seja em um ensaio feminino, na expectativa da
+            maternidade ou na preservação de momentos especiais,
+            cada imagem é uma oportunidade de eternizar uma história.
+            <br><br>
+            Será um prazer fazer parte da sua!
+        </p>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact" id="contato">
+
+        <div class="eyebrow">Vamos criar memórias?</div>
+
+        <h2>Seu próximo momento começa aqui.</h2>
+
+        <p>
+            Entre em contato para conhecer nossos serviços
+            e agendar seu atendimento.
+        </p>
+
+        <div class="contact-details">
+
+            <div>
+                <h3>WhatsApp</h3>
+                <p>(21) 98281-9245</p>
+            </div>
+
+            <div>
+                <h3>Localização</h3>
+                <p>Piabetá · Magé · RJ</p>
+            </div>
+
+            <div>
+                <h3>Instagram</h3>
+                <p>@estudiolarissapinheiro</p>
+            </div>
+
+        </div>
+
+        <a
+            href="https://wa.me/5521982819245?text=Ol%C3%A1!%20Encontrei%20o%20site%20do%20Est%C3%BAdio%20Larissa%20Pinheiro%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+            target="_blank"
+            class="primary-button"
+        >
+            Falar pelo WhatsApp →
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <a href="#inicio" class="logo">
+            Estúdio
+            <span>Larissa Pinheiro</span>
+        </a>
+
+        <a
+            href="https://www.instagram.com/estudiolarissapinheiro/"
+            target="_blank"
+            class="social-link"
+        >
+            Instagram · @estudiolarissapinheiro
+        </a>
+
+        <p>
+            © <span id="year"></span> Estúdio Larissa Pinheiro.
+            Todos os direitos reservados.
+        </p>
+
+        <p>
+            Fotografia com sensibilidade e personalidade.
+        </p>
+
+    </footer>
+
+
+    <!-- WHATSAPP FLOAT -->
+
+    <a
+        href="https://wa.me/5521982819245"
+        target="_blank"
+        class="whatsapp-float"
+        aria-label="Conversar pelo WhatsApp"
+    >
+        ☎
+    </a>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navigation = document.getElementById("navigation");
+
+        menuToggle.addEventListener("click", () => {
+            navigation.classList.toggle("active");
+
+            menuToggle.textContent =
+                navigation.classList.contains("active") ? "×" : "☰";
+        });
+
+        document.querySelectorAll("#navigation a").forEach(link => {
+            link.addEventListener("click", () => {
+                navigation.classList.remove("active");
+                menuToggle.textContent = "☰";
+            });
+        });
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+</html>
